@@ -1,0 +1,230 @@
+:root{
+ --text-color: rgb(15, 15, 15) ;
+ --link-color: #4a76ee;
+ --background-color: #fffdd0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* ini bagian atas */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+nav .right a{
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 10px 20px;
+    
+}
+
+nav .right a {
+    margin-right: 3px;
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+    
+}
+
+nav .right a i{
+    font-size: 24px;
+}
+
+nav .right a span{
+    margin-left: 3px;
+}
+
+/* ini bagian perkenala */
+.Awalan{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    align-items: center;
+    gap: 50px;
+}
+
+.Awalan .content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 5;
+}
+
+.Awalan .content .Text h2{
+    font-size: 45px;
+}
+
+.Awalan .content .Text p{
+    max-width: 80%;
+    line-height: 1.6;
+    /* font-style: oblique; */
+    font-size: 30px;
+    text-align: justify;
+    margin-top: 20px
+    
+    
+}
+
+
+.Awalan .Gambardiri img{
+    width: 500px;
+    height: 500px;
+    flex: 2;
+    border-radius: 50%;
+    
+}
+
+.Awalan .content .Links{
+    display: flex;
+    margin-top: 25px;
+}
+
+.Awalan .content .Links a{
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--link-color);
+    border-radius: 8px;
+    margin-right:  20px;
+}
+
+.Awalan .content .Links a i{
+    font-size: 20px;
+}
+
+/* ini bagian sklls */
+.Skills {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.Skills h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.Skills .Text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Skills .Text p{
+    line-height: 1.6;
+    font-style: oblique;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px
+}
+
+.Skills .cells {
+    display: flex;
+    justify-content: center;
+
+}
+
+.Skills .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 30px;
+    border: 2px solid #d3d3d3;
+    border-radius: 10px;
+    margin:10px ;
+}
+
+.Skills .cells .cell img{
+    width: 40px;
+    margin-right: 7px;
+    border-radius: 10px;
+}
+
+.Skills .cells .cell span{
+    font-weight: bold;
+    font-style: oblique;
+    color: black;
+}
+
+/* ini bagian contact */
+.Contact{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.Contact h2{
+    font-size: 50px;
+}
+
+.Contact .grup{
+    display: flex;
+    gap: 50px;
+}
+
+.Contact .grup .Text{
+    flex: 3px;
+    margin-top: 20px;
+
+}
+
+.Contact .grup .Text p{
+   font-size: 25px;
+   text-align: justify;
+   line-height: 1.6;
+    
+}
+.Contact .grup form{
+    flex: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact .grup form input,
+.Contact .grup form textarea{
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    resize: none;
+    outline: none;
+}
+
+.Contact .grup button{
+    font-size: 15px;
+    font-family: 'Poppins';
+    color: #ffff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+}
